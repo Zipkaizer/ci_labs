@@ -98,7 +98,7 @@ def train_som(som, data, num_iteration):
         som.update(x, bmu, i, num_iteration)
 
 # Initialize the SOM with adjusted parameters
-som = MiniSom(x=1, y=3, input_len=11, sigma=1.0, learning_rate=0.5, random_seed=50)
+som = MiniSom(x=1, y=3, input_len=11, sigma=1.0, learning_rate=0.1, random_seed=50)
 som.random_weights_init(data)
 
 # Measure training time
