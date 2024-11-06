@@ -10,40 +10,40 @@ y0 = 24  # Ensure y0 is defined before usage
 # Membership Function A1 (Trapezoidal)
 def mu_A1(x):
     if 16 <= x <= 20:
-        return (x - 16) / 4
+        return (x - 16) / (20 - 16)
     elif 20 < x <= 30:
         return 1
     elif 30 < x <= 35:
-        return -(x - 30) / 5 + 1
+        return (35 - x) / (35 - 30)
     else:
         return 0
 
 # Membership Function A2 (Triangular)
 def mu_A2(x):
     if 15 <= x <= 20:
-        return (x - 15) / 5
+        return (x - 15) / (20 - 15)
     elif 20 < x <= 28:
-        return -(x - 20) / 8 + 1
+        return (28 - x) / (28 - 20)
     else:
         return 0
 
 # Membership Function B1 (Triangular)
 def mu_B1(y):
     if 18 <= y <= 23:
-        return (y - 18) / 5
+        return (y - 18) / (23 - 18)
     elif 23 < y <= 30:
-        return -(y - 23) / 7 + 1
+        return (30 - y) / (30 - 23)
     else:
         return 0
 
 # Membership Function B2 (Trapezoidal)
 def mu_B2(y):
     if 21 <= y <= 26:
-        return (y - 21) / 5
+        return (y - 21) / (26 - 21)
     elif 26 < y <= 32:
         return 1
     elif 32 < y <= 40:
-        return -(y - 32) / 8 + 1
+        return (40 - y) / (40 - 32)
     else:
         return 0
 
